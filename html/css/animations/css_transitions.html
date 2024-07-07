@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .main{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            transition: all 1s cubic-bezier(.35,.81,1,-1,.04);
+        }
+        .main:hover{
+            border-radius: 50%;
+            background-color: blueviolet;
+            transform: translate(100px,100px);
+        }
+
+        h1{
+            font-size: 100px;
+            width: fit-content;
+            transition: transform 400ms;
+            margin-inline: auto;
+        }
+        h1:hover{
+            transform: rotate(90deg) scale(1.5);
+        }
+        .img{
+            width: 100px;
+            height: 450px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: all 1s;
+        
+
+            border-radius: 30px;
+            margin-inline: 5px;
+        }
+        img:hover{
+            filter: grayscale(0%);
+            width: 350px;
+        }
+    </style>
+
+    </head>
+    <body>
+        <img src="https://img2.10bestmedia.com/Images/Photos/372524/Historic-Woodstock-Square_55_660x440.jpg" alt="city">
+        <img src="https://www.shutterstock.com/image-photo/traditional-main-street-downtown-quaint-260nw-631707398.jpg" alt="night city">
+        <img src="https://t4.ftcdn.net/jpg/00/52/62/97/360_F_52629701_F2ux6kDvXLG4MpDrLz6AM9qYpBS786SD.jpg" alt="hills image">
+        <h1>😂</h1>
+        <div class="main">
+
+        </div>
+    </body>
+
+</html>

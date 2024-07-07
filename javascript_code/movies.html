@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<body>
+    <h1 class="text-3xl text-center my-4">search for a movie</h1>
+
+    <div class="font-mono flex justify-center gap-2">
+        <input type="text" class="border-2 text-2xl rounded">
+    <button class="py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-900">find movie</button>
+    </div>
+    <div class="grid grid-cols-4 m-4 border-2 border-green-400 rounded-lg w-1/2 mx-auto my-4">
+        <div>
+            <img id="poster"
+        src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+                alt="rrr"
+                class="h-full object-cover w-full">       
+        </div>
+        <div class="col-span-3 m-4">
+            <div class="flex">
+                <h2 id="title" class="flex-auto font-semibold font-sans tracking-wide text-2xl">Hello this is the title : </h2>
+                <p><span class="font-semibold">year:</span><span id="year" class="font-thin font-mono">2022</span></p>
+            </div>
+            <div class="h-full py-6 grid grid-cols-2 grid-rows-2 gap-2">
+                <div class="font-sans">
+                    <span class="text-xl font-bold">GENER</span>
+                    <p id="name">R R R</p>
+                </div>
+                <div class="font-sans">
+                    <span class="text-xl font-bold">movie length</span>
+                    <p id="time">145 min</p>
+                </div>
+                <div class="font-sans">
+                    <span class="text-xl font-bold">Actors</span>
+                    <p id="actors">Ram Charan,N.T.R</p>
+                </div>
+                <div class="font-sans">
+                    <span class="text-xl font-bold">Director </span>
+                    <p id="director">Rajamouli</p>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="movies.js"></script>
+    
+</body>
+</html>

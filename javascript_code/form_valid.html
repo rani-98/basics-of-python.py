@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body>
+    <form>
+        <input type="text" name = "username" placeholder = "name" required/>
+        <input type="text" name = "age" placeholder = "age" required />
+        <input type="email" name = "email" placeholder = "email" required />
+        <input type="file" name="file" placeholder="file" required />
+        <input type="password" name="p word" placeholder="password" required />
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        const form = document.querySelector("form");
+
+        function handleFormsubmit(event){
+            // prevent the default
+            event.preventDefault();
+            //
+            var name = event.target.username.value;
+            var age = event.target.age.value;
+            var email = event.target.email.value;
+
+            console.log("name",name);
+            console.log("age",age)
+            console.log("email",email);
+            //event.target.submit();
+
+        }
+        form.addEventListener("submit",handleFormsubmit);
+
+    </script>
+    
+</body>
+</html>

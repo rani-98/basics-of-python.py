@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // fetch--> it is used to make network requests
+        // fetch takes a url as an argument
+        fetch("http://127.0.0.1:5500/javascript.html/dom.html")
+        .then((result)=>{
+            console.log("top of the then block")
+            //we get the response from the server
+            return result.text();
+
+        })
+        .then((data)=>{
+            console.log("printing the result of the promise");
+            console.log(data);
+        })
+        .catch((error)=>{
+            console.log(error);
+        })
+    </script>
+    
+</body>
+</html>

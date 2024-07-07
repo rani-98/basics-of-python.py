@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>events</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <button>click me</button>
+
+
+        <script>
+            const rootDiv=document.getElementById("root")
+            function btnclicked(){
+                const newH1=document.createElement("h1")
+                newH1.textContent="hello how are you?"
+
+                rootDiv.appendChild(newH1)
+            }
+            
+            
+            const btn=document.querySelector("button");
+            btn.addEventListener("click",btnclicked);
+        </script>
+    </body>
+</html>

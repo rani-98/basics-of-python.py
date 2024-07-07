@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>flex box</title>
+        <style>
+            *{
+                margin: 1;
+                padding: 0;
+            }
+            h1{
+                border:5px solid rgb(114, 24, 189);
+                padding-inline: 70px;
+                margin-inline: 150px;
+                margin-block: 100px;
+                
+            
+            }
+            #box{
+                border:2px solid rgb(7, 77, 48);
+                display:flex;
+                flex-wrap:wrap;
+                flex-direction:row;
+                gap: 90px; 
+                height:100px;
+            }
+            .item2{
+                height: 20px;
+                width: 20px;
+                background-color: red;
+                flex-shrink: 0px;
+            
+            }
+            
+    
+        </style>
+    
+    </head>
+    <body>
+        <h1> hello</h1>
+        <div id="box">
+            <p class="item2"></p>
+            <p class="item2"></p>
+            <p class="item2"></p>
+            <p class="item2"></p>
+            <p class="item2"></p>
+            <p class="item2"></p>
+            <p class="item2"></p>
+            <p class="item2"></p>
+        </div>
+        <p>fiex box used for alines items
+             horizontally or vertically</p>
+        <h3>h3 one</h3>
+        <h3>h3 two</h3>
+        <h3>h3 three</h3>
+        <h5>h1 tag, p tags areblock level eliments. because they add new item is showing
+            on new line.
+        </h5>
+        <span>hello this span</span>
+        <span>this is span 2</span>
+        *span tag is inline elements they 
+        adding new item in same line.*<hr>
+    
+    
+    
+    </body>
+</html>

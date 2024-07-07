@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>web document</title>
+        <style>
+            body{
+                background-color: rgba(224, 211, 245, 0.966);
+                
+            }
+            .main{
+
+                height: 500px;
+                width: 910px;
+                align-items: center;
+                background-color:rgb(151, 64, 125);
+                display: flex;
+                
+                
+            
+            }
+            .matter{
+                padding-left: 60px;
+            }
+            .main div button:last-child{
+                padding: 4px;
+                background-color: rgb(74, 170, 36);
+            }
+            .pic img{
+                height: 350px;
+                width: 300px;
+                padding-inline: 100px;
+            }
+            .circle{
+                margin: 0;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 4px solid rgb(17, 209, 11);
+                top: 0;
+                transform: translate(840%,100%);
+            }
+            
+
+            
+        </style>
+
+    </head>
+    <body>
+      
+        <div class="main">
+            <div class="matter">
+                <h1>Well,howdy there!👋🏻
+                </h1>
+                <h1 id="a-value"></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Odio, nihil excepturi quae itaque doloribus quos accusamus 
+                    earum
+    
+                </p>
+                <h3>choose one choice required music types----> </h3>
+                <button>classical</button>
+                <button>folk</button>
+                <button>western</button>
+                <button>filmy music</button>
+                
+                <h3><button><a href="./cards.html"> ^Get More^ </a></button></h3>
+                
+            </div>
+            
+            
+            <div class="pic">
+                <img src="https://cdn.britannica.com/78/218278-050-A6BADFBB/American-musician-Tim-McGraw-2015.jpg" alt="music">
+    
+                
+            </div>
+        </div>
+        <div>
+        <p class="circle"></p>
+    
+        </div>
+        <div>
+            <p class="plus">➕
+                 </p>
+        
+            </div>
+        
+            <script>
+                var a= 10;
+                document.getElementById('a-value').innerText =a;
+                console.log('Hi , Welcome to js')
+            </script>       
+
+        
+    </body>
+</html>

@@ -1,0 +1,37 @@
+function App(){
+    const name="Rani"
+    const math=84
+    const eng=79
+  
+    const fruits = ["Apple", "Banana", "Mango", "Kiwi"]
+  
+    const passed = true
+  
+    
+    return(
+      <>
+      <div className="text-3xl border">
+        hello this is div tag
+      </div>
+      <h1>hello {name} , how are you</h1>
+      <h1>total score: {math+eng} / 200</h1>
+      <h2>your score in math{math}</h2>
+      <h2>your score in eng{eng}</h2>
+      <ul>
+        {
+  
+          fruits.map((fruit,index)=>{
+            return(<li key={index}>{fruit}</li>)
+  
+          })
+        }
+      </ul>
+  
+         { passed ? <h1>you are passed</h1> : <h1>sorry, better luck next time</h1>  }
+        
+      </>
+    
+    )
+  }
+  
+  export default App 

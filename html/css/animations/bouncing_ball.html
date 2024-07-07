@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> css animation bouncing boll</title>
+        <style>
+            h1{
+                font-size: 50px;
+                width: fit-content;
+                margin-inline: auto;
+            }
+            #text-ani{
+                animation: text-out 2s;
+
+            }
+            img{
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+            #dance{
+                animation-name: moonwalk;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes moonwalk {
+                from{
+                    transform: translate(0,0);
+                }
+                to{transform: translate(400px,0);}
+                
+            }
+            @keyframes text-out{
+                0%{
+                    opacity: 1;
+                    letter-spacing: 0;
+                }
+                100%{
+                    opacity: 0;
+                    letter-spacing: -15px;
+                
+
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1 id="text-ani">my animation</h1>
+        <h1 id="dance"></h1>
+        <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1f483.gif">
+    </body>
+</html>

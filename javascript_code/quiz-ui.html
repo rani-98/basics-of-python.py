@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center py-5 text-2xl font-bold">Quiz App</h1>
+    <div class="grid grid-cols-3 border gap-x-2 px-16">
+        <div class="col-span-2 border shadow-xl rounded-md">
+            <div id="question" class="border bg-indigo-300
+            rounded-md px-3 py-3 my-4 shadow-xl">what is the capital of india</div>
+            
+            <div id="options" class="flex flex-col gap-2">
+                <div class="option-item border px-4 py-2 shadow-sm  border-indigo-200 bg-teal-100 shadow-indigo-400/60"
+                onclick="SelectionOption(this)"
+                data-option="0">
+                    new delhi
+                </div>
+                <div class="option-item border px-4 py-2 shadow-sm  border-indigo-200 bg-teal-100 shadow-indigo-400/60"
+                onclick="SelectionOption(this)"
+                data-option="1">
+                    chennai
+                </div>
+                <div class="option-item border px-4 py-2 shadow-sm border-indigo-200 bg-teal-100 shadow-indigo-400/60"
+                onclick="SelectionOption(this)"
+                data-option="2">
+                    mumbai
+                </div>
+                <div class="option-item border px-4 py-2 shadow-sm border-indigo-200 bg-teal-100 shadow-indigo-400/60"
+                onclick="SelectionOption(this)"
+                data-option="3">
+                    kolkata
+                </div>
+            </div>
+            <div class="my-4 text-center gap-x-2">
+                <button id="previous"class="bg-indigo-500 shadow-lg shadow indigo-400 
+                px-6 py-2 rounded-md">previous</button>
+                <button id="next" class="bg-indigo-500 shadow-lg shadow indigo-300 
+                px-2 py-2 rounded-md text-white">next -> </button>
+
+            </div>   
+            </div>
+            <div class="p-2 shadow-lg rounded-md">
+                <div>
+                    <span>Question <span id="current questions">1</span>/<span 
+                    id="total questions">10</span>
+                    <div class="grid grid-cols-4 gap-2 mt-3 md:grid-cols-4 lg:grid-cols-6">
+                        <button class="bg-slate-400 h-10 w-10 rounded-full">1</button>
+                        <button class="bg-slate-400 h-10 w-10 rounded-full">2</button>
+                        <button class="bg-slate-400 h-10 w-10 rounded-full">3</button>
+                        <button class="bg-slate-400 h-10 w-10 rounded-full">4</button>
+                        <button class="bg-slate-400 h-10 w-10 rounded-full">5</button>
+                        
+
+                    </div>
+
+                </div>
+
+             </div>
+
+        </div>
+
+    </div>
+    <script src="quiz.js"></script>
+
+
+    
+</body>
+</html>
